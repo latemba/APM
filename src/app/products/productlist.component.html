@@ -1,5 +1,6 @@
 <div class='panel panel-primary'>
     <div class='panel-heading'>
+        {{pageTitle}}
     </div>
     <div class='panel-body'>
       <div class='row'>
@@ -31,7 +32,8 @@
               </thead>
               <tbody>
                   <tr *ngFor='let product of products'>
-                      <td></td>
+                      <td><img [src]='product.imageUrl'[title]='product.productName'
+                        [style.width.px]='imageWidth' [style.margin.px]='imageMargin' ></td>
                       <td>{{product.productName}}</td>
                       <td>{{product.productCode}}</td>
                       <td>{{product.releaseDate}}</td>
