@@ -5,12 +5,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProductlistComponent } from './products/productlist.component';
-
+import { ProductFilterPipe } from './products/productfilter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
